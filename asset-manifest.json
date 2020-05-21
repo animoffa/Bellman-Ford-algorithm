@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Bellman-Ford-algorithm/static/css/main.faa3ce89.chunk.css",
+    "main.js": "/Bellman-Ford-algorithm/static/js/main.515136e4.chunk.js",
+    "main.js.map": "/Bellman-Ford-algorithm/static/js/main.515136e4.chunk.js.map",
+    "runtime-main.js": "/Bellman-Ford-algorithm/static/js/runtime-main.fb4ffed5.js",
+    "runtime-main.js.map": "/Bellman-Ford-algorithm/static/js/runtime-main.fb4ffed5.js.map",
+    "static/js/2.aaf29c44.chunk.js": "/Bellman-Ford-algorithm/static/js/2.aaf29c44.chunk.js",
+    "static/js/2.aaf29c44.chunk.js.map": "/Bellman-Ford-algorithm/static/js/2.aaf29c44.chunk.js.map",
+    "index.html": "/Bellman-Ford-algorithm/index.html",
+    "precache-manifest.d92382e3e2694267f34e12b480a9e4ef.js": "/Bellman-Ford-algorithm/precache-manifest.d92382e3e2694267f34e12b480a9e4ef.js",
+    "service-worker.js": "/Bellman-Ford-algorithm/service-worker.js",
+    "static/css/main.faa3ce89.chunk.css.map": "/Bellman-Ford-algorithm/static/css/main.faa3ce89.chunk.css.map",
+    "static/js/2.aaf29c44.chunk.js.LICENSE.txt": "/Bellman-Ford-algorithm/static/js/2.aaf29c44.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb4ffed5.js",
+    "static/js/2.aaf29c44.chunk.js",
+    "static/css/main.faa3ce89.chunk.css",
+    "static/js/main.515136e4.chunk.js"
+  ]
+}
