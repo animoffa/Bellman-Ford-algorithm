@@ -19,6 +19,7 @@ class App extends Component {
             distances: [],
             shortWay: 0,
             activeDots: [],
+            time: 0
         }
     }
 
@@ -104,11 +105,36 @@ class App extends Component {
     }
 
     bellmanFord() {
+        const start = performance.now();
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.fillStyle = "#7aff60";
+            ctx.arc(200, 300, 11, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.fillStyle = "#000000";
+            ctx.fillText("1", 194, 305);
+            let lenght = this.state.dots.length;
+            let xx = this.state.dots[lenght - 1].a;
+            let yy = this.state.dots[lenght - 1].b;
+            ctx.fillStyle = "#ff0004";
+            ctx.arc(xx, yy, 11, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.fillStyle = "#000000";
+            let N = String(this.state.dots[lenght - 1].id);
+            ctx.fillText(N, xx - 6, yy + 5);
+            ctx.stroke();
+        }
         let distances = {};
         let parents = {};
         let shortWay = 0;
         let c;
         let activeDots = [];
+
+
         for (let i = 0; i < this.state.dots.length; i++) {
             distances[this.state.lines[i].endDots.id] = Infinity;
             parents[this.state.lines[i].endDots.id] = null;
@@ -131,11 +157,14 @@ class App extends Component {
                 return undefined;
             }
         }
+
+        const time = performance.now() - start;
         this.setState((state) => {
             return {
                 ...state,
                 shortWay: shortWay,
                 activeDots: activeDots,
+                time: time
             }
         });
         return {parents, distances, shortWay};
@@ -149,14 +178,15 @@ class App extends Component {
                 <span className={"Results"}>
                     Вес минимального пути: {this.state.shortWay}<br/>
                     Минимальный путь: <span><span className={"dots"}>1</span>{this.state.activeDots.map(d => <span
-                    className={"dots"}>{d}</span>)}</span>
+                    className={"dots"}>{d}</span>)}</span><br/>
+                Время выполнения: {this.state.time} ms
                 </span>
                 <button className={"BellmanFordButton"} onClick={() => this.bellmanFord()}>старт</button>
                 <div className={"Description"}><b style={{margin: "15px"}}>Данная программа реализует алгоритм
                     Беллмана-Форда</b><br/>
                     Для того, что бы начать рисовать график, нажмите на поле. Для соединения точки с уже существующей
                     просто нажмите на неё. Приносим свои извинения, в данный момент сайт не адаптирован для мобильных
-                    устройств.
+                    устройств. Пожалуйста , соединяйте первую и последнюю точку во избежание ошибок.
                 </div>
             </div>
 
