@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Bellman-Ford-algorithm/precache-manifest.d92382e3e2694267f34e12b480a9e4ef.js"
+  "/Bellman-Ford-algorithm/precache-manifest.0797604859f0cb68d518e8ada997a094.js"
 );
 
 self.addEventListener('message', (event) => {

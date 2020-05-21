@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "715978f883fd2794e416430ffc6bdb7c",
+    "revision": "e1ffbea0e0002362e74ffe3a5edd6f33",
     "url": "/Bellman-Ford-algorithm/index.html"
   },
   {
-    "revision": "a3ba0f6c9e42b30b6c70",
-    "url": "/Bellman-Ford-algorithm/static/css/main.faa3ce89.chunk.css"
+    "revision": "c7688fd248e386e47166",
+    "url": "/Bellman-Ford-algorithm/static/css/main.c51162b3.chunk.css"
   },
   {
     "revision": "1e2a417030d7158b5187",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bellman-Ford-algorithm/static/js/2.aaf29c44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3ba0f6c9e42b30b6c70",
-    "url": "/Bellman-Ford-algorithm/static/js/main.515136e4.chunk.js"
+    "revision": "c7688fd248e386e47166",
+    "url": "/Bellman-Ford-algorithm/static/js/main.5770e91e.chunk.js"
   },
   {
     "revision": "ba9c45dfe4574fd3916f",
